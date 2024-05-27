@@ -1,0 +1,85 @@
+/* 全局样式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+/* 容器 */
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* 侧边栏 */
+.sidebar {
+    width: 20%;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar .menu li a:hover {
+    background-color: #ddd;
+}
+
+/* 主内容区 */
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+.upload-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007aff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005ecb;
+}
+
+/* 分析区域样式 */
+.analysis-section {
+    display: flex;
+    height: calc(80% - 20px); /* 减去margin-bottom */
+}
+
+.echarts-container {
+    width: 70%;
+    margin-right: 2%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 70%; /* 这70%的70% */
+}
+
+.analysis-report {
+    width: 28%; /* 剩余的30%中的大部分 */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    resize: none; /* 防止用户调整大小 */
+    padding: 10px;
+    overflow-y: auto;
+}
